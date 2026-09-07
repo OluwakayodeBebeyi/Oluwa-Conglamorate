@@ -105,3 +105,20 @@ body { font-size: 20px; }
 .brand { font-size: 20px; }
 .brand-name { font-size: 36px; }
 @media (max-width: 800px) { .brand-name { font-size: 24px; } }
+
+@media (max-width: 500px) {
+	body { font-size: 16px; }
+	.brand { font-size: 11px; }
+	.brand-name { font-size: 20px; }
+	.site-nav, .site-nav a, .nav-divisions summary { font-size: 11px; }
+	.hero-intro, .detail-copy, .catalog-heading > p, .contact-side > p { font-size: 15px; }
+	.footer-main { grid-template-columns: 1fr; }
+	.footer-intro { grid-column: auto; }
+}
+
+@media (max-width: 500px) {
+	.brand { min-width: 0; }
+	.brand-name { font-size: 20px; }
+	.footer-main, .footer-intro, .footer-column { min-width: 0; }
+	.footer-intro .brand { max-width: 100%; }
+}
