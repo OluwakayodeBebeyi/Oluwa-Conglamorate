@@ -2,7 +2,7 @@ import './style.css'
 
 document.querySelector('#app').innerHTML = `
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Oluwa Conglomerate home">
+    <a class="brand" href="index.html" aria-label="Oluwa Conglomerate home">
       <img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo">
       <span class="brand-name">OLUWA <b>CONGLOMERATE</b></span>
     </a>
