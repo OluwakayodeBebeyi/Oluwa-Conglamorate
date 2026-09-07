@@ -36,9 +36,9 @@ document.querySelector('#app').innerHTML = `
     <section id="divisions" class="divisions section-shell">
       <div class="section-heading"><p class="eyebrow"><span></span> Three ways we serve</p><h2>One shared belief:<br><em>every detail matters.</em></h2></div>
       <div class="division-grid">
-        <a class="division-card housing" href="housing.html"><span class="card-number">01</span><div class="card-icon">⌂</div><div><p class="card-kicker">Oluwa Housing</p><h3>Spaces that<br>hold your life.</h3><span class="card-link">Discover housing ↗</span></div></a>
-        <a class="division-card textiles" href="textiles.html"><span class="card-number">02</span><div class="card-icon">✳</div><div><p class="card-kicker">Oluwa Textiles</p><h3>What you wear<br>should feel like you.</h3><span class="card-link">Explore textiles ↗</span></div></a>
-        <a class="division-card foods" href="foods.html"><span class="card-number">03</span><div class="card-icon">✦</div><div><p class="card-kicker">Oluwa Foods</p><h3>Good food.<br>Good company.</h3><span class="card-link">Taste the difference ↗</span></div></a>
+        <a class="division-card housing" href="housing.html"><span class="card-number">01</span><div class="card-icon">⌂</div><div><p class="card-kicker">Oluwa Housing & Estate</p><h3>Spaces that<br>hold your life.</h3><span class="card-link">Discover housing ↗</span></div></a>
+        <a class="division-card textiles" href="textiles.html"><span class="card-number">02</span><div class="card-icon">✳</div><div><p class="card-kicker">Oluwa Clothing and Textiles</p><h3>What you wear<br>should feel like you.</h3><span class="card-link">Explore clothing ↗</span></div></a>
+        <a class="division-card foods" href="foods.html"><span class="card-number">03</span><div class="card-icon">✦</div><div><p class="card-kicker">Oluwa Foods and Organics</p><h3>Good food.<br>Good company.</h3><span class="card-link">Shop foods ↗</span></div></a>
       </div>
     </section>
 
