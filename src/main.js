@@ -3,7 +3,7 @@ import './style.css'
 document.querySelector('#app').innerHTML = `
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Oluwa Conglomerate home">
-      <img class="brand-logo" src="/oc-logo.png" alt="">
+      <img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo">
       <span class="brand-name">OLUWA <b>CONGLOMERATE</b></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button>
@@ -25,7 +25,7 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div class="hero-art reveal">
         <div class="sun"></div>
-        <div class="hero-circle"><span>OC</span></div>
+        <div class="hero-circle"><img src="/oc-logo.png" alt="Oluwa Conglomerate OC logo"></div>
         <div class="art-label label-one">Since<br><strong>1998</strong></div>
         <div class="art-label label-two">People<br>first</div>
         <div class="hero-line"></div>
@@ -52,7 +52,7 @@ document.querySelector('#app').innerHTML = `
     <section id="contact" class="contact"><div class="section-shell contact-inner"><div><p class="eyebrow"><span></span> Stay close</p><h2>Let’s build<br><em>what’s next.</em></h2></div><div class="contact-side"><p>Whether you have a question, a big idea, or just want to say hello, our door is open.</p><a class="contact-email" href="mailto:hello@oluwaconglomerate.com">hello@oluwaconglomerate.com <span>↗</span></a><form id="newsletter"><label for="email">Get the occasional good news</label><div class="input-row"><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></div><p class="form-status" aria-live="polite"></p></form></div></div></section>
   </main>
 
-  <footer class="site-footer"><div class="section-shell footer-inner"><a class="brand" href="index.html"><img class="brand-logo" src="/oc-logo.png" alt=""><span class="brand-name">OLUWA <b>CONGLOMERATE</b></span></a><div class="footer-links"><a href="#divisions">Divisions</a><a href="about.html">About us</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></div><p>© 2025 Oluwa Conglomerate</p></div></footer>
+  <footer class="site-footer"><div class="section-shell footer-inner"><a class="brand" href="index.html"><img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo"><span class="brand-name">OLUWA <b>CONGLOMERATE</b></span></a><div class="footer-links"><a href="#divisions">Divisions</a><a href="about.html">About us</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></div><p>© 2025 Oluwa Conglomerate</p></div></footer>
 `
 
 const toggle = document.querySelector('.menu-toggle')
