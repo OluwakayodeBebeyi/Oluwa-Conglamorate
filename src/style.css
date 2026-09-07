@@ -37,6 +37,23 @@
 .approach-visual { background: #dbe9ff; }
 .subpage.contact-page .sub-art-shape { background: #b9d2f7; color: var(--ink); }
 
+.subpage { background: var(--paper); color: var(--ink); }
+.subpage .sub-detail { border-top-color: #b9cde9; }
+.subpage .detail-copy, .subpage .catalog-heading > p { color: #405575; }
+.subpage .sub-art-label, .subpage .sub-stat span { color: #314563; }
+.subpage .catalog-card { background: #f8fbff; border-color: #bfd2ed; }
+.subpage .catalog-info h3, .subpage .sub-stories h3 { color: var(--ink); }
+.subpage .catalog-info p, .subpage .story-meta { color: #31527f; }
+.subpage .sub-band { background: #0e3ba0; }
+.subpage .sub-band .eyebrow { color: #b9d2f7; }
+.subpage .sub-links { border-top-color: #5578ba; }
+.subpage .sub-links a { border-bottom-color: #5578ba; color: white; }
+.subpage .sub-links a span { color: #b9d2f7; }
+.subpage .sub-contact input, .subpage .sub-contact textarea { border-bottom-color: #86a5d2; }
+.subpage .sub-contact input::placeholder, .subpage .sub-contact textarea::placeholder { color: #54709a; opacity: 1; }
+.subpage .contact-details > p:last-child { color: #314563; }
+.subpage .contact-details > p:last-child a { color: var(--blue); }
+
 .floating-top-button { width: 44px; height: 44px; min-width: 44px; padding: 0; display: grid; place-items: center; border: 1px solid var(--blue); border-radius: 2px; color: white; background: var(--blue); font: 700 22px/1 var(--sans); }
 .floating-top-button:hover, .floating-top-button:focus-visible { border-color: #0e3ba0; background: #0e3ba0; }
 
