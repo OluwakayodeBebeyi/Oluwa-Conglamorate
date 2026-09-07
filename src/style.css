@@ -123,6 +123,6 @@ body { font-size: 20px; }
 	.footer-intro .brand { max-width: 100%; }
 }
 
-.housing { background: linear-gradient(rgba(22,72,187,.7), rgba(22,72,187,.82)), url('/img/housing.jpg') center / cover; }
-.textiles { background: linear-gradient(rgba(14,45,119,.7), rgba(14,45,119,.84)), url('/img/Clothing.jpg') center / cover; }
-.foods { background: linear-gradient(rgba(51,113,230,.68), rgba(51,113,230,.82)), url('/img/Foods.jpg') center / cover; }
+.housing { background: linear-gradient(rgba(22,72,187,.34), rgba(22,72,187,.52)), url('/img/housing.jpg') center / cover; }
+.textiles { background: linear-gradient(rgba(14,45,119,.34), rgba(14,45,119,.54)), url('/img/Clothing.jpg') center / cover; }
+.foods { background: linear-gradient(rgba(51,113,230,.3), rgba(51,113,230,.5)), url('/img/Foods.jpg') center / cover; }
