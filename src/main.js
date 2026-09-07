@@ -28,7 +28,7 @@ document.querySelector('#app').innerHTML = `
       <div class="hero-art reveal">
         <div class="sun"></div>
         <div class="hero-circle"><img src="/oc-logo.png" alt="Oluwa Conglomerate OC logo"></div>
-        <div class="art-label label-one">Since<br><strong>1998</strong></div>
+        <div class="art-label label-one">Since<br><strong>2025</strong></div>
         <div class="art-label label-two">People<br>first</div>
         <div class="hero-line"></div>
       </div>

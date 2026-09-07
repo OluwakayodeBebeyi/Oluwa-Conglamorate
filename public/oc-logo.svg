@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 50 560 540" role="img" aria-labelledby="title desc">
   <title id="title">Oluwa Conglomerate logo</title>
-  <desc id="desc">Blue circular Oluwa Conglomerate mark with OC lettering and since 1998.</desc>
+  <desc id="desc">Blue circular Oluwa Conglomerate mark with OC lettering and since 2025.</desc>
   <circle cx="80" cy="78" r="72" fill="#f7c857"/>
   <circle cx="384" cy="290" r="216" fill="#dbe5f8" transform="translate(22 22)"/>
   <circle cx="384" cy="290" r="216" fill="#1d59d7"/>
@@ -8,6 +8,6 @@
   <circle cx="384" cy="290" r="94" fill="none" stroke="#6e96e9" stroke-width="1.5" opacity=".65"/>
   <text x="384" y="337" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="112" font-style="italic" letter-spacing="-18">OC</text>
   <text x="588" y="520" fill="#101727" font-family="monospace" font-size="14" letter-spacing="2">SINCE</text>
-  <text x="588" y="558" fill="#1456d8" font-family="monospace" font-size="30" font-weight="700" letter-spacing="1">1998</text>
+  <text x="588" y="558" fill="#1456d8" font-family="monospace" font-size="30" font-weight="700" letter-spacing="1">2025</text>
   <path d="M 595 612 L 650 573" stroke="#bdc9dc" stroke-width="1"/>
 </svg>

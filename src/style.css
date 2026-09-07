@@ -35,3 +35,10 @@
 .contact { background: #d9e8ff; }
 .approach-visual { background: #dbe9ff; }
 .subpage.contact-page .sub-art-shape { background: #b9d2f7; color: var(--ink); }
+
+/* The site's standard reading and interface size is 20px. Display headings retain their hierarchy. */
+body { font-size: 20px; }
+.site-nav, .site-nav a, .nav-divisions summary, .hero-intro, .text-link, .eyebrow, .card-number, .card-kicker, .card-link, .hero-note, .art-label, .footer-intro > p, .footer-column, .footer-bottom, .story-meta, .contact-side > p, .contact-email, .input-row input, .form-status, .sub-art-label, .detail-copy, .sub-stat span, .catalog-heading > p, .catalog-info p, .catalog-info strong, .catalog-action, .sub-contact label, .sub-contact input, .sub-contact textarea, .form-button, .footer-top-button { font-size: 20px; }
+.brand { font-size: 20px; }
+.brand-name { font-size: 36px; }
+@media (max-width: 800px) { .brand-name { font-size: 24px; } }
