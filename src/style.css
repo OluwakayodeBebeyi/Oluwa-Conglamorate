@@ -126,4 +126,10 @@ body { font-size: 20px; }
 .housing { background: linear-gradient(rgba(22,72,187,.12), rgba(22,72,187,.24)), url('/img/housing.jpg') center / cover; }
 .textiles { background: linear-gradient(rgba(14,45,119,.14), rgba(14,45,119,.26)), url('/img/Clothing.jpg') center / cover; }
 .foods { background: linear-gradient(rgba(51,113,230,.1), rgba(51,113,230,.22)), url('/img/Foods.jpg') center / cover; }
+.division-card { isolation: isolate; transition: transform .3s, box-shadow .3s, background-size .45s ease; background-size: cover !important; }
+.division-card::after { content: ''; position: absolute; z-index: 0; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.2) 48%, transparent 66%); transform: translateX(-125%); transition: transform .65s ease; pointer-events: none; }
+.division-card > * { position: relative; z-index: 1; text-shadow: 0 1px 3px rgba(16,23,39,.55); }
+.division-card:hover, .division-card:focus-visible { transform: translateY(-8px); background-size: 114% !important; box-shadow: 14px 18px 0 rgba(16,23,39,.16); }
+.division-card:hover::after, .division-card:focus-visible::after { transform: translateX(125%); }
+.division-card:focus-visible { outline: 3px solid #f7c857; outline-offset: 4px; }
 .division-card > * { text-shadow: 0 1px 3px rgba(16,23,39,.55); }
