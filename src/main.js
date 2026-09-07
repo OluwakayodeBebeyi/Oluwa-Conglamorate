@@ -49,7 +49,7 @@ document.querySelector('#app').innerHTML = `
       <div class="approach-copy"><p class="eyebrow"><span></span> Our story</p><h2>Essentials for a<br><em>better life.</em></h2><p>Food, clothing, and shelter are the things humans cannot do without. We want to make a platform for high-quality goods, merchandise, and services, while creating job opportunities for as many people as possible.</p><a class="text-link" href="about.html">Read our full story <span>↗</span></a></div>
     </section>
 
-    <section id="journal" class="journal section-shell"><div class="journal-top"><div><p class="eyebrow"><span></span> From the journal</p><h2>Notes from<br><em>the everyday.</em></h2></div><a class="text-link" href="journal.html">View all stories <span>↗</span></a></div><div class="story-grid"><article><div class="story-image story-one"><span>FIELD<br>NOTES / 01</span></div><p class="story-meta">Oluwa Foods · 06.12.24</p><h3>Why the best meals begin long before the kitchen.</h3></article><article><div class="story-image story-two"><span>FIELD<br>NOTES / 02</span></div><p class="story-meta">Oluwa Housing · 18.10.24</p><h3>A home is more than four walls. We know.</h3></article></div></section>
+    <section id="journal" class="journal section-shell"><div class="journal-top"><div><p class="eyebrow"><span></span> From the journal</p><h2>Notes from<br><em>the everyday.</em></h2></div><a class="text-link" href="journal.html">View all stories <span>↗</span></a></div><div class="story-grid"><a class="story-card" href="journal.html#food-story"><article><div class="story-image story-one"><span>FIELD<br>NOTES / 01</span></div><p class="story-meta">Oluwa Foods · 06.12.24</p><h3>Why the best meals begin long before the kitchen.</h3></article></a><a class="story-card" href="journal.html#housing-story"><article><div class="story-image story-two"><span>FIELD<br>NOTES / 02</span></div><p class="story-meta">Oluwa Housing · 18.10.24</p><h3>A home is more than four walls. We know.</h3></article></a></div></section>
 
     <section id="contact" class="contact"><div class="section-shell contact-inner"><div><p class="eyebrow"><span></span> Stay close</p><h2>Let’s build<br><em>what’s next.</em></h2></div><div class="contact-side"><p>Whether you have a question, a big idea, or just want to say hello, our door is open.</p><a class="contact-email" href="mailto:samuel12kayode@gmail.com">samuel12kayode@gmail.com <span>↗</span></a><form id="newsletter"><label for="email">Get the occasional good news</label><div class="input-row"><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></div><p class="form-status" aria-live="polite"></p></form></div></div></section>
   </main>
@@ -106,6 +106,14 @@ heroArt?.addEventListener('pointermove', (event) => {
   const bounds = heroArt.getBoundingClientRect()
   const x = (event.clientX - bounds.left) / bounds.width - 0.5
   const y = (event.clientY - bounds.top) / bounds.height - 0.5
-  heroArt.querySelector('.hero-circle').style.transform = `translate(${x * 10}px, ${y * 10}px)`
+  heroArt.querySelector('.hero-circle').style.setProperty('--bubble-x', `${x * 10}px`)
+  heroArt.querySelector('.hero-circle').style.setProperty('--bubble-y', `${y * 10}px`)
 })
-heroArt?.addEventListener('pointerleave', () => { heroArt.querySelector('.hero-circle').style.transform = '' })
+heroArt?.addEventListener('pointerleave', () => {
+  heroArt.querySelector('.hero-circle').style.setProperty('--bubble-x', '0px')
+  heroArt.querySelector('.hero-circle').style.setProperty('--bubble-y', '0px')
+})
+window.addEventListener('scroll', () => {
+  if (!heroArt) return
+  heroArt.querySelector('.hero-circle').style.setProperty('--bubble-y', `${Math.sin(window.scrollY / 180) * 5}px`)
+}, { passive: true })
