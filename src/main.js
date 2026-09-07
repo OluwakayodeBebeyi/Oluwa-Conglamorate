@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="#divisions">Our divisions</a>
+      <details class="nav-divisions"><summary>Our divisions</summary><div class="nav-dropdown"><a href="foods.html">Oluwa Foods and Organics</a><a href="textiles.html">Oluwa Clothing and Textiles</a><a href="housing.html">Oluwa Housing &amp; Estate</a></div></details>
       <a href="about.html">Our approach</a>
       <a href="journal.html">Journal</a>
       <a class="nav-cta" href="contact.html">Work with us <span>↗</span></a>
