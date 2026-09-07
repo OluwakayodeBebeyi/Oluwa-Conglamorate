@@ -8,10 +8,11 @@ document.querySelector('#app').innerHTML = `
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
       <details class="nav-divisions"><summary>Our divisions</summary><div class="nav-dropdown"><a href="foods.html">Oluwa Foods and Organics</a><a href="textiles.html">Oluwa Clothing and Textiles</a><a href="housing.html">Oluwa Housing &amp; Estate</a></div></details>
-      <a href="about.html">Our approach</a>
+      <a href="about.html">About Us</a>
       <a href="journal.html">Journal</a>
-      <a class="nav-cta" href="contact.html">Work with us <span>↗</span></a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -52,7 +53,7 @@ document.querySelector('#app').innerHTML = `
     <section id="contact" class="contact"><div class="section-shell contact-inner"><div><p class="eyebrow"><span></span> Stay close</p><h2>Let’s build<br><em>what’s next.</em></h2></div><div class="contact-side"><p>Whether you have a question, a big idea, or just want to say hello, our door is open.</p><a class="contact-email" href="mailto:samuel12kayode@gmail.com">samuel12kayode@gmail.com <span>↗</span></a><form id="newsletter"><label for="email">Get the occasional good news</label><div class="input-row"><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></div><p class="form-status" aria-live="polite"></p></form></div></div></section>
   </main>
 
-  <footer class="site-footer"><div class="section-shell footer-main"><div class="footer-intro"><a class="brand" href="index.html"><img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo"><span class="brand-name">OLUWA <b>CONGLOMERATE</b></span></a><p>Better essentials, made accessible.<br>For everyone, for the long run.</p></div><div class="footer-column"><p class="footer-label">Divisions</p><a href="foods.html">Oluwa Foods and Organics</a><a href="textiles.html">Oluwa Clothing and Textiles</a><a href="housing.html">Oluwa Housing & Estate</a></div><div class="footer-column"><p class="footer-label">Company</p><a href="about.html">Our story</a><a href="journal.html">Journal</a><a href="contact.html">Contact us</a></div><div class="footer-column"><p class="footer-label">Visit</p><p>No. 1 Zaria Road, Jos</p><a href="mailto:samuel12kayode@gmail.com">samuel12kayode@gmail.com</a><a href="tel:08146973780">08146973780</a></div></div><div class="footer-bottom-band"><div class="section-shell footer-bottom"><p>© 2025 Oluwa Conglomerate</p><p>Food · Clothing · Shelter</p><button class="footer-top-button" type="button" aria-label="Scroll back to top">Back to top ↑</button></div></div></footer>
+  <footer class="site-footer"><div class="section-shell footer-main"><div class="footer-intro"><a class="brand" href="index.html"><img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo"><span class="brand-name">OLUWA <b>CONGLOMERATE</b></span></a><p>Better essentials, made accessible.<br>For everyone, for the long run.</p></div><div class="footer-column"><p class="footer-label">Divisions</p><a href="foods.html">Oluwa Foods and Organics</a><a href="textiles.html">Oluwa Clothing and Textiles</a><a href="housing.html">Oluwa Housing & Estate</a></div><div class="footer-column"><p class="footer-label">Company</p><a href="about.html">Our story</a><a href="journal.html">Journal</a><a href="contact.html">Contact us</a></div><div class="footer-column"><p class="footer-label">Visit</p><p>No. 1 Zaria Road, Jos</p><a href="mailto:samuel12kayode@gmail.com">samuel12kayode@gmail.com</a><a href="tel:08146973780">08146973780</a></div></div><div class="footer-bottom-band"><div class="section-shell footer-bottom"><p>© 2025 Oluwa Conglomerate</p><p>Food · Clothing · Shelter</p><button class="footer-top-button" type="button" aria-label="Scroll back to top"><span aria-hidden="true">↑</span> Back to top</button></div></div></footer>
 `
 
 const toggle = document.querySelector('.menu-toggle')
