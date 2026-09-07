@@ -1,6 +1,7 @@
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Oluwa Conglomerate home">
       <img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo">
@@ -72,3 +73,37 @@ document.querySelector('#newsletter').addEventListener('submit', (event) => {
 })
 
 document.querySelector('.footer-top-button').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }))
+
+const progressBar = document.querySelector('.scroll-progress')
+const updateProgress = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight
+  progressBar.style.transform = `scaleX(${scrollable ? window.scrollY / scrollable : 0})`
+}
+window.addEventListener('scroll', updateProgress, { passive: true })
+updateProgress()
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible')
+      revealObserver.unobserve(entry.target)
+    }
+  })
+}, { threshold: 0.14 })
+document.querySelectorAll('main section, .division-card, .story-grid article').forEach((element) => {
+  element.classList.add('scroll-reveal')
+  revealObserver.observe(element)
+})
+
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.nav-divisions')) document.querySelector('.nav-divisions')?.removeAttribute('open')
+})
+
+const heroArt = document.querySelector('.hero-art')
+heroArt?.addEventListener('pointermove', (event) => {
+  const bounds = heroArt.getBoundingClientRect()
+  const x = (event.clientX - bounds.left) / bounds.width - 0.5
+  const y = (event.clientY - bounds.top) / bounds.height - 0.5
+  heroArt.querySelector('.hero-circle').style.transform = `translate(${x * 10}px, ${y * 10}px)`
+})
+heroArt?.addEventListener('pointerleave', () => { heroArt.querySelector('.hero-circle').style.transform = '' })

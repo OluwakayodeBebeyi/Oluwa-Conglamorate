@@ -37,6 +37,7 @@ const current = pages[page] || pages.housing
 const catalogMarkup = current.catalog ? `<section class="catalog section-shell"><div class="catalog-heading"><div><p class="eyebrow"><span></span> Available now</p><h2>Made for your<br><em>everyday.</em></h2></div><p>Browse our current selection. Every item is chosen for quality, value, and a life well lived.</p></div><div class="catalog-grid">${current.catalog.map(([name, description, category, price, image]) => `<article class="catalog-card"><div class="catalog-image"><img src="${image}" alt="${name}" loading="lazy"><span>${category}</span></div><div class="catalog-info"><div><h3>${name}</h3><p>${description}</p></div><strong>${price}</strong></div><a class="catalog-action" href="contact.html">Enquire now <span>↗</span></a></article>`).join('')}</div></section>` : ''
 
 document.querySelector('#app').innerHTML = `
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header"><a class="brand" href="index.html" aria-label="Oluwa Conglomerate home"><img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo"><span class="brand-name">OLUWA <b>CONGLOMERATE</b></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button><nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><details class="nav-divisions"><summary>Our divisions</summary><div class="nav-dropdown"><a href="foods.html">Oluwa Foods and Organics</a><a href="textiles.html">Oluwa Clothing and Textiles</a><a href="housing.html">Oluwa Housing &amp; Estate</a></div></details><a href="about.html">About Us</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></nav></header>
   <main class="subpage ${current.color}">
     <section class="sub-hero section-shell"><div><p class="eyebrow"><span></span> ${current.eyebrow}</p><h1>${current.title.replace('\n', '<br>')}</h1><p class="hero-intro">${current.intro}</p><a class="text-link" href="contact.html">Start a conversation <span>↗</span></a></div><div class="sub-art"><div class="sub-art-shape"><img src="/oc-logo.png" alt="Oluwa Conglomerate OC logo"></div><span class="sub-art-label">${current.eyebrow}<br><strong>EST. 1998</strong></span></div></section>
@@ -61,3 +62,37 @@ contactForm?.addEventListener('submit', (event) => {
 })
 
 document.querySelector('.footer-top-button').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }))
+
+const progressBar = document.querySelector('.scroll-progress')
+const updateProgress = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight
+  progressBar.style.transform = `scaleX(${scrollable ? window.scrollY / scrollable : 0})`
+}
+window.addEventListener('scroll', updateProgress, { passive: true })
+updateProgress()
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible')
+      revealObserver.unobserve(entry.target)
+    }
+  })
+}, { threshold: 0.14 })
+document.querySelectorAll('main section, .catalog-card, .sub-stories article').forEach((element) => {
+  element.classList.add('scroll-reveal')
+  revealObserver.observe(element)
+})
+
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.nav-divisions')) document.querySelector('.nav-divisions')?.removeAttribute('open')
+})
+
+const subArt = document.querySelector('.sub-art')
+subArt?.addEventListener('pointermove', (event) => {
+  const bounds = subArt.getBoundingClientRect()
+  const x = (event.clientX - bounds.left) / bounds.width - 0.5
+  const y = (event.clientY - bounds.top) / bounds.height - 0.5
+  subArt.querySelector('.sub-art-shape').style.transform = `rotate(4deg) translate(${x * 10}px, ${y * 10}px)`
+})
+subArt?.addEventListener('pointerleave', () => { subArt.querySelector('.sub-art-shape').style.transform = '' })
