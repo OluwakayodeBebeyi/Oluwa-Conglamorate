@@ -27,6 +27,7 @@
 @media (max-width: 800px) { .site-footer { padding-top: 50px; }.footer-main { grid-template-columns: 1fr 1fr; gap: 38px 20px; padding-bottom: 45px; }.footer-intro { grid-column: 1 / -1; }.footer-bottom { align-items: flex-start; flex-direction: column; gap: 12px; } }
 @media (max-width: 800px) { .floating-top-button { right: 16px; bottom: 16px; min-width: 0; padding: 11px 13px; }.floating-top-button span:last-child { display: none; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; }.reveal, .scroll-reveal { animation: none; opacity: 1; transform: none; transition: none; }.hero-circle, .sub-art-shape { transition: none; } }
+@media (max-width: 800px) { .floating-top-button { width: 42px; height: 42px; min-width: 42px; padding: 0; }.floating-top-button span:last-child { display: block; } }
 
 /* Keep secondary surfaces within the same blue family as the brand. */
 .story-one { background: #7fa9d9; }
@@ -35,6 +36,9 @@
 .contact { background: #d9e8ff; }
 .approach-visual { background: #dbe9ff; }
 .subpage.contact-page .sub-art-shape { background: #b9d2f7; color: var(--ink); }
+
+.floating-top-button { width: 44px; height: 44px; min-width: 44px; padding: 0; display: grid; place-items: center; border: 1px solid var(--blue); border-radius: 2px; color: white; background: var(--blue); font: 700 22px/1 var(--sans); }
+.floating-top-button:hover, .floating-top-button:focus-visible { border-color: #0e3ba0; background: #0e3ba0; }
 
 /* The site's standard reading and interface size is 20px. Display headings retain their hierarchy. */
 body { font-size: 20px; }
