@@ -122,3 +122,7 @@ body { font-size: 20px; }
 	.footer-main, .footer-intro, .footer-column { min-width: 0; }
 	.footer-intro .brand { max-width: 100%; }
 }
+
+.housing { background: linear-gradient(rgba(22,72,187,.7), rgba(22,72,187,.82)), url('/img/housing.jpg') center / cover; }
+.textiles { background: linear-gradient(rgba(14,45,119,.7), rgba(14,45,119,.84)), url('/img/Clothing.jpg') center / cover; }
+.foods { background: linear-gradient(rgba(51,113,230,.68), rgba(51,113,230,.82)), url('/img/Foods.jpg') center / cover; }
