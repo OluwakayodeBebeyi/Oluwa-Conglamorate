@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,500;1,500;1,600&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 :root { --blue: #1456d8; --ink: #101727; --paper: #edf4ff; --muted: #5e6f8e; --serif: 'Lora', Georgia, serif; --sans: 'Montserrat', sans-serif; --mono: 'DM Mono', monospace; font-family: var(--sans); color: var(--ink); background: var(--paper); font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
-* { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; min-width: 320px; } a { color: inherit; text-decoration: none; } button, input { font: inherit; }
+* { box-sizing: border-box; } html { scroll-behavior: smooth; overflow-x: hidden; } body { margin: 0; min-width: 320px; overflow-x: hidden; } a { color: inherit; text-decoration: none; } button, input { font: inherit; }
 .scroll-progress { position: fixed; z-index: 30; top: 0; left: 0; width: 100%; height: 3px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .12s linear; }
 .section-shell { width: min(1200px, calc(100% - 72px)); margin: 0 auto; }
 .site-header { height: 88px; width: min(1320px, calc(100% - 72px)); margin: auto; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10; }
@@ -42,6 +42,34 @@
 @media (max-width: 800px) { .hero-copy { padding-bottom: 0; }.contact-email { max-width: 100%; font-size: 16px; } }
 @media (prefers-reduced-motion: reduce) { .hero-circle, .sub-art-shape { animation: none; } }
 @media (max-width: 800px) { .floating-top-button { width: 42px; height: 42px; min-width: 42px; padding: 0; }.floating-top-button span:last-child { display: block; } }
+
+@media (max-width: 1100px) {
+	.site-header { width: min(100% - 48px, 900px); }
+	.menu-toggle { display: block; font: 20px var(--mono); cursor: pointer; }
+	.site-nav { display: none; position: absolute; top: 76px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 0; background: var(--paper); box-shadow: 0 12px 25px rgba(16,23,39,.12); }
+	.site-nav.is-open { display: flex; }
+	.site-nav a, .nav-divisions summary { padding: 15px 20px; }
+	.nav-divisions { padding: 0; }
+	.nav-dropdown { position: static; width: auto; border: 0; box-shadow: none; background: #dbe9ff; }
+	.nav-dropdown a { padding: 13px 35px; }
+	.division-grid, .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+	.footer-main { grid-template-columns: 1fr 1fr; }
+	.footer-intro { grid-column: 1 / -1; }
+}
+
+@media (max-width: 500px) {
+	.section-shell, .site-header { width: calc(100% - 32px); }
+	.site-header { height: 68px; }
+	.brand { gap: 7px; min-width: 0; }
+	.brand-logo { width: 45px; height: 38px; flex: 0 0 auto; }
+	.brand-name { font-size: 20px; letter-spacing: 0; white-space: normal; }
+	.menu-toggle { flex: 0 0 auto; font-size: 18px; }
+	.site-nav { top: 64px; }
+	.hero, .approach { overflow: hidden; }
+	.hero-line { right: -14%; }
+	.contact-email { max-width: 100%; overflow-wrap: anywhere; word-break: break-word; font-size: 16px; }
+	.contact-side, .contact-inner, .sub-contact, .sub-contact form { min-width: 0; }
+}
 
 /* Keep secondary surfaces within the same blue family as the brand. */
 .story-one { background: #7fa9d9; }
