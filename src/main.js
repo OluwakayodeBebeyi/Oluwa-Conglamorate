@@ -3,14 +3,14 @@ import './style.css'
 document.querySelector('#app').innerHTML = `
   <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Oluwa Conglomerate home">
-      <img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo">
-      <span class="brand-name">OLUWA <b>CONGLOMERATE</b></span>
+    <a class="brand" href="index.html" aria-label="Opson Conglomerate home">
+      <img class="brand-logo" src="/oc-logo.png" alt="Opson Conglomerate logo">
+      <span class="brand-name">OPSON <b>CONGLOMERATE</b></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <details class="nav-divisions"><summary>Our divisions</summary><div class="nav-dropdown"><a href="foods.html">Oluwa Foods and Organics</a><a href="textiles.html">Oluwa Clothing and Textiles</a><a href="housing.html">Oluwa Housing &amp; Estate</a></div></details>
+      <details class="nav-divisions"><summary>Our divisions</summary><div class="nav-dropdown"><a href="foods.html">Opson Foods and Organics</a><a href="textiles.html">Opson Clothing and Textiles</a><a href="housing.html">Opson Housing &amp; Estate</a></div></details>
       <a href="about.html">About Us</a>
       <a href="journal.html">Journal</a>
       <a href="contact.html">Contact</a>
@@ -27,7 +27,7 @@ document.querySelector('#app').innerHTML = `
       </div>
       <div class="hero-art reveal">
         <div class="sun"></div>
-        <div class="hero-circle"><img src="/oc-logo.png" alt="Oluwa Conglomerate OC logo"></div>
+        <div class="hero-circle"><img src="/oc-logo.png" alt="Opson Conglomerate OC logo"></div>
         <div class="art-label label-one">Since<br><strong>2025</strong></div>
         <div class="art-label label-two">People<br>first</div>
         <div class="hero-line"></div>
@@ -38,25 +38,25 @@ document.querySelector('#app').innerHTML = `
     <section id="divisions" class="divisions section-shell">
       <div class="section-heading"><p class="eyebrow"><span></span> Three ways we serve</p><h2>One shared belief:<br><em>every detail matters.</em></h2></div>
       <div class="division-grid">
-        <a class="division-card housing" href="housing.html"><span class="card-number">01</span><div class="card-icon">⌂</div><div><p class="card-kicker">Oluwa Housing & Estate</p><h3>Spaces that<br>hold your life.</h3><span class="card-link">Discover housing ↗</span></div></a>
-        <a class="division-card textiles" href="textiles.html"><span class="card-number">02</span><div class="card-icon">✳</div><div><p class="card-kicker">Oluwa Clothing and Textiles</p><h3>What you wear<br>should feel like you.</h3><span class="card-link">Explore clothing ↗</span></div></a>
-        <a class="division-card foods" href="foods.html"><span class="card-number">03</span><div class="card-icon">✦</div><div><p class="card-kicker">Oluwa Foods and Organics</p><h3>Good food.<br>Good company.</h3><span class="card-link">Shop foods ↗</span></div></a>
+        <a class="division-card housing" href="housing.html"><span class="card-number">01</span><div class="card-icon">⌂</div><div><p class="card-kicker">Opson Housing & Estate</p><h3>Spaces that<br>hold your life.</h3><span class="card-link">Discover housing ↗</span></div></a>
+        <a class="division-card textiles" href="textiles.html"><span class="card-number">02</span><div class="card-icon">✳</div><div><p class="card-kicker">Opson Clothing and Textiles</p><h3>What you wear<br>should feel like you.</h3><span class="card-link">Explore clothing ↗</span></div></a>
+        <a class="division-card foods" href="foods.html"><span class="card-number">03</span><div class="card-icon">✦</div><div><p class="card-kicker">Opson Foods and Organics</p><h3>Good food.<br>Good company.</h3><span class="card-link">Shop foods ↗</span></div></a>
       </div>
     </section>
 
     <section id="approach" class="approach section-shell">
-      <div class="approach-visual"><div class="visual-grid"></div><div class="visual-stamp">OLUWA<br><span>∞</span><br>TOGETHER</div></div>
+      <div class="approach-visual"><div class="visual-grid"></div><div class="visual-stamp">OPSON<br><span>∞</span><br>TOGETHER</div></div>
       <div class="approach-copy"><p class="eyebrow"><span></span> Our story</p><h2>Essentials for a<br><em>better life.</em></h2><p>Food, clothing, and shelter are the things humans cannot do without. We want to make a platform for high-quality goods, merchandise, and services, while creating job opportunities for as many people as possible.</p><a class="text-link" href="about.html">Read our full story <span>↗</span></a></div>
     </section>
 
-    <section id="journal" class="journal section-shell"><div class="journal-top"><div><p class="eyebrow"><span></span> From the journal</p><h2>Notes from<br><em>the everyday.</em></h2></div><a class="text-link" href="journal.html">View all stories <span>↗</span></a></div><div class="story-grid"><a class="story-card" href="journal.html#food-story"><article><div class="story-image story-one"><span>FIELD<br>NOTES / 01</span></div><p class="story-meta">Oluwa Foods · 06.12.24</p><h3>Why the best meals begin long before the kitchen.</h3></article></a><a class="story-card" href="journal.html#housing-story"><article><div class="story-image story-two"><span>FIELD<br>NOTES / 02</span></div><p class="story-meta">Oluwa Housing · 18.10.24</p><h3>A home is more than four walls. We know.</h3></article></a></div></section>
+    <section id="journal" class="journal section-shell"><div class="journal-top"><div><p class="eyebrow"><span></span> From the journal</p><h2>Notes from<br><em>the everyday.</em></h2></div><a class="text-link" href="journal.html">View all stories <span>↗</span></a></div><div class="story-grid"><a class="story-card" href="journal.html#food-story"><article><div class="story-image story-one"><span>FIELD<br>NOTES / 01</span></div><p class="story-meta">Opson Foods · 06.12.24</p><h3>Why the best meals begin long before the kitchen.</h3></article></a><a class="story-card" href="journal.html#housing-story"><article><div class="story-image story-two"><span>FIELD<br>NOTES / 02</span></div><p class="story-meta">Opson Housing · 18.10.24</p><h3>A home is more than four walls. We know.</h3></article></a></div></section>
 
     <section id="contact" class="contact"><div class="section-shell contact-inner"><div><p class="eyebrow"><span></span> Stay close</p><h2>Let’s build<br><em>what’s next.</em></h2></div><div class="contact-side"><p>Whether you have a question, a big idea, or just want to say hello, our door is open.</p><a class="contact-email" href="mailto:samuel12kayode@gmail.com">samuel12kayode@gmail.com <span>↗</span></a><form id="newsletter"><label for="email">Get the occasional good news</label><div class="input-row"><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></div><p class="form-status" aria-live="polite"></p></form></div></div></section>
   </main>
 
   <button class="footer-top-button floating-top-button" type="button" aria-label="Scroll back to top"><span aria-hidden="true">↑</span></button>
 
-  <footer class="site-footer"><div class="section-shell footer-main"><div class="footer-intro"><a class="brand" href="index.html"><img class="brand-logo" src="/oc-logo.png" alt="Oluwa Conglomerate logo"><span class="brand-name">OLUWA <b>CONGLOMERATE</b></span></a><p>Better essentials, made accessible.<br>For everyone, for the long run.</p></div><div class="footer-column"><p class="footer-label">Divisions</p><a href="foods.html">Oluwa Foods and Organics</a><a href="textiles.html">Oluwa Clothing and Textiles</a><a href="housing.html">Oluwa Housing & Estate</a></div><div class="footer-column"><p class="footer-label">Company</p><a href="about.html">Our story</a><a href="journal.html">Journal</a><a href="contact.html">Contact us</a></div><div class="footer-column"><p class="footer-label">Visit</p><p>No. 1 Zaria Road, Jos</p><a href="mailto:samuel12kayode@gmail.com">samuel12kayode@gmail.com</a><a href="tel:08146973780">08146973780</a></div></div><div class="footer-bottom-band"><div class="section-shell footer-bottom"><p>© 2025 Oluwa Conglomerate</p><p>Food · Clothing · Shelter</p></div></div></footer>
+  <footer class="site-footer"><div class="section-shell footer-main"><div class="footer-intro"><a class="brand" href="index.html"><img class="brand-logo" src="/oc-logo.png" alt="Opson Conglomerate logo"><span class="brand-name">OPSON <b>CONGLOMERATE</b></span></a><p>Better essentials, made accessible.<br>For everyone, for the long run.</p></div><div class="footer-column"><p class="footer-label">Divisions</p><a href="foods.html">Opson Foods and Organics</a><a href="textiles.html">Opson Clothing and Textiles</a><a href="housing.html">Opson Housing & Estate</a></div><div class="footer-column"><p class="footer-label">Company</p><a href="about.html">Our story</a><a href="journal.html">Journal</a><a href="contact.html">Contact us</a></div><div class="footer-column"><p class="footer-label">Visit</p><p>No. 1 Zaria Road, Jos</p><a href="mailto:samuel12kayode@gmail.com">samuel12kayode@gmail.com</a><a href="tel:08146973780">08146973780</a></div></div><div class="footer-bottom-band"><div class="section-shell footer-bottom"><p>© 2025 Opson Conglomerate</p><p>Food · Clothing · Shelter</p></div></div></footer>
 `
 
 const toggle = document.querySelector('.menu-toggle')
